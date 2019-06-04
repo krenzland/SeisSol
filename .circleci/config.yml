@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: krenzland/seissol-build-dependencies:latest
+        user: seissol
     steps:
       - checkout
       - run:
